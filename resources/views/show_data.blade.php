@@ -43,7 +43,7 @@
 
         </tbody>
       </table>
-      {{ $showdata->links() }}
+      {{ $showdata->links('pagination::bootstrap-5') }}
    </div>
 
 

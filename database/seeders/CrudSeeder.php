@@ -16,10 +16,12 @@ class CrudSeeder extends Seeder
     public function run()
     {
         //
+        for ($i = 0; $i < 1000; $i++) {
         Crud::create([
-           
+
             'name'=>fake()->name(),
             'email'=>fake()->unique()->email()
         ]);
+    }
     }
 }

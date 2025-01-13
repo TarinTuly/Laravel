@@ -17,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/',[CrudeController::class,'showData']);
+Route::get('/',[CrudeController::class,'showData'])->name('show-data');
 Route::get('/add-data',[CrudeController::class,'addData']);
 Route::post('/store-data',[CrudeController::class,'storeData']);
 Route::get('/edit-data/{id}',[CrudeController::class,'editData']);
-Route::post('/update-data/{id}',[CrudeController::class,'updateData']);
+//Route::post('/update-data/{id}',[CrudeController::class,'updateData']);
+Route::post('/update-data/{id}',[CrudeController::class,'updateData'])->name('update-data');
 Route::get('/delete-data/{id}',[CrudeController::class,'deleteData']);

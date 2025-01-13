@@ -42,7 +42,10 @@
             @error('email')
             <span class="text-danger">{{ $message }}</span>
           @enderror
-        </div>
+          {{-- <input type="hidden" name="page" value="{{ $editData->page }}"> --}}
+          <input type="hidden" name="page" value="{{ $page }}">
+
+
         <input type="submit" class="btn btn-primary " value="Submit">
      </form>
    </div>
